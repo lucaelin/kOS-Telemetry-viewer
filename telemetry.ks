@@ -22,7 +22,7 @@ loggers:ADD("AoA", { return VANG(SHIP:FACING:FOREVECTOR, SHIP:VELOCITY:SURFACE).
 loggers:ADD("Q", { return SHIP:Q. }).
 loggers:ADD("ETA:APOAPSIS", { return ETA:APOAPSIS. }).
 loggers:ADD("APOAPSIS", { return APOAPSIS. }).
-loggers:ADD("PERIAPSIS", { return PERIAPSIS. }).
+loggers:ADD("_PERIAPSIS", { return PERIAPSIS. }). // elements starting with _ are deselected on the plot by default
 
 log loggers:KEYS:JOIN(",") to logfile.
 
